@@ -31,13 +31,13 @@ TUBES_PBO/
 ```
 
 ## 🧠 Konsep OOP & Fitur Teknis yang Diterapkan
-Encapsulation (Enkapsulasi): membungkus data variabel profil penghuni dan properti pembayaran ke dalam objek kelas KamarKos dan PembayaranKos.
+- Encapsulation (Enkapsulasi): membungkus data variabel profil penghuni dan properti pembayaran ke dalam objek kelas KamarKos dan PembayaranKos.
 
-Modularity (Modularitas): Isolasi total antara fungsi antarmuka (main_app.py), otak pengontrol (manajer_kos.py), dan akses query database (database.py).
+- Modularity (Modularitas): Isolasi total antara fungsi antarmuka (main_app.py), otak pengontrol (manajer_kos.py), dan akses query database (database.py).
 
-Data Persistence: Mengubah data objek sementara di memori komputer (RAM) menjadi data permanen di dalam harddisk menggunakan SQLite.
+- Data Persistence: Mengubah data objek sementara di memori komputer (RAM) menjadi data permanen di dalam harddisk menggunakan SQLite.
 
-Relasi Database (Cascading Delete): Hubungan One-to-Many antara tabel kamar dan pembayaran. Menghapus data induk (kamar) otomatis menyapu bersih seluruh log transaksi anak (pembayaran) demi menjaga integritas data.
+- Relasi Database (Cascading Delete): Hubungan One-to-Many antara tabel kamar dan pembayaran. Menghapus data induk (kamar) otomatis menyapu bersih seluruh log transaksi anak (pembayaran) demi menjaga integritas data.
 
 ## ⚙️ Langkah Instalasi & Urutan Menjalankan Aplikasi
 Buka terminal di text editor Anda (misal: VS Code) dan jalankan perintah:
