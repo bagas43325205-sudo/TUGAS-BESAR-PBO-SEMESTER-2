@@ -19,7 +19,7 @@ Aplikasi pengelolaan kos dan pencatatan transaksi keuangan bulanan berbasis **We
 ## 📂 Struktur Arsitektur Proyek
 Aplikasi ini menerapkan pemisahan fungsionalitas independen (*Separation of Concerns* / *Modular Design*):
 
-'''text
+```
 TUBES_PBO/
 │
 ├── konfigurasi.py    # Konfigurasi path database global & master data bulan
@@ -28,7 +28,7 @@ TUBES_PBO/
 ├── manajer_kos.py    # Logika bisnis utama, manipulasi data, & filter transaksional
 ├── main_app.py       # Representasi antarmuka pengguna (UI) berbasis Streamlit
 └── monitoring_kos.db # Berkas basis data relasional SQLite (Dibuat otomatis oleh sistem)
-'''
+```
 
 🧠 Konsep OOP & Fitur Teknis yang Diterapkan
 Encapsulation (Enkapsulasi): Membungkus data variabel profil penghuni dan properti pembayaran ke dalam objek kelas KamarKos dan PembayaranKos.
