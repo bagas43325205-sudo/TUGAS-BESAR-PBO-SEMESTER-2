@@ -30,7 +30,7 @@ TUBES_PBO/
 └── monitoring_kos.db # Berkas basis data relasional SQLite (Dibuat otomatis oleh sistem)
 ```
 
-🧠 Konsep OOP & Fitur Teknis yang Diterapkan
+## 🧠 Konsep OOP & Fitur Teknis yang Diterapkan
 Encapsulation (Enkapsulasi): Membungkus data variabel profil penghuni dan properti pembayaran ke dalam objek kelas KamarKos dan PembayaranKos.
 
 Modularity (Modularitas): Isolasi total antara fungsi antarmuka (main_app.py), otak pengontrol (manajer_kos.py), dan akses query database (database.py).
