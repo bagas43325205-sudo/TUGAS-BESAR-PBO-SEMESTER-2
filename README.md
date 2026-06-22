@@ -19,7 +19,7 @@ Aplikasi pengelolaan kos dan pencatatan transaksi keuangan bulanan berbasis **We
 ## 📂 Struktur Arsitektur Proyek
 Aplikasi ini menerapkan pemisahan fungsionalitas independen (*Separation of Concerns* / *Modular Design*):
 
-
+'''plaintext
 TUBES_PBO/
 │
 ├── konfigurasi.py    # Konfigurasi path database global & master data bulan
@@ -28,6 +28,8 @@ TUBES_PBO/
 ├── manajer_kos.py    # Logika bisnis utama, manipulasi data, & filter transaksional
 ├── main_app.py       # Representasi antarmuka pengguna (UI) berbasis Streamlit
 └── monitoring_kos.db # Berkas basis data relasional SQLite (Dibuat otomatis oleh sistem)
+'''
+
 🧠 Konsep OOP & Fitur Teknis yang Diterapkan
 Encapsulation (Enkapsulasi): Membungkus data variabel profil penghuni dan properti pembayaran ke dalam objek kelas KamarKos dan PembayaranKos.
 
@@ -37,7 +39,7 @@ Data Persistence: Mengubah data objek sementara di memori komputer (RAM) menjadi
 
 Relasi Database (Cascading Delete): Hubungan One-to-Many antara tabel kamar dan pembayaran. Menghapus data induk (kamar) otomatis menyapu bersih seluruh log transaksi anak (pembayaran) demi menjaga integritas data.
 
-⚙️ Langkah Instalasi & Urutan Menjalankan Aplikasi
+## ⚙️ Langkah Instalasi & Urutan Menjalankan Aplikasi
 Buka terminal di text editor Anda (misal: VS Code) dan jalankan perintah:
 
 Bash
@@ -48,7 +50,7 @@ Bash
 python -m streamlit run main_app.py
 (Catatan: Jika Windows mengarahkan ke Microsoft Store, gunakan perintah: py -m streamlit run main_app.py)
 
-Alur Alur Simulasi Awal (Wajib Diikuti)
+## Alur Alur Simulasi Awal (Wajib Diikuti)
 
 1. Buka Menu Kelola Kamar & Penghuni terlebih dahulu.
 
