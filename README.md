@@ -19,7 +19,7 @@ Aplikasi pengelolaan kos dan pencatatan transaksi keuangan bulanan berbasis **We
 ## 📂 Struktur Arsitektur Proyek
 Aplikasi ini menerapkan pemisahan fungsionalitas independen (*Separation of Concerns* / *Modular Design*):
 
-'''plaintext
+'''text
 TUBES_PBO/
 │
 ├── konfigurasi.py    # Konfigurasi path database global & master data bulan
