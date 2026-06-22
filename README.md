@@ -42,9 +42,12 @@ Relasi Database (Cascading Delete): Hubungan One-to-Many antara tabel kamar dan 
 ## ⚙️ Langkah Instalasi & Urutan Menjalankan Aplikasi
 Buka terminal di text editor Anda (misal: VS Code) dan jalankan perintah:
 
-Bash
+```text
 pip install streamlit pandas
+```
+
 Menjalankan Server Aplikasi Pastikan direktori terminal berada di dalam folder proyek ini, lalu eksekusi:
+
 
 Bash
 python -m streamlit run main_app.py
