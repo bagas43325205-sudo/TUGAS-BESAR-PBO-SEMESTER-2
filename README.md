@@ -7,12 +7,12 @@ Aplikasi pengelolaan kos dan pencatatan transaksi keuangan bulanan berbasis **We
 ---
 
 ## 🚀 Fitur Utama
-* **Dynamic Room Manager**: Pendaftaran, pembaruan data profil (*upsert*), dan penghapusan unit kamar kos secara langsung melalui antarmuka web.
-* **Bulk Payment Simulation**: Mendukung pembayaran rapel (banyak bulan sekaligus). Sistem secara otomatis mengalkulasi pembagian nominal transaksi secara rata per bulan.
-* **Real-Time Dashboard Tracking**: Pemisahan visual otomatis antara kamar yang berstatus "Lunas" dan kamar yang memiliki tunggakan ("DP/Nyicil") pada periode tertentu.
-* **Automated Financial Analytics**: Visualisasi data pendapatan riil dari database ke dalam bentuk Grafik Batang (*Bar Chart*) interaktif.
-* **Data Portability (Export CSV)**: Fitur unduh laporan data kelunasan hanya dengan satu klik untuk keperluan pembukuan lanjutan di Microsoft Excel.
-* **Undo Transaction**: Mekanisme pembatalan atau penghapusan riwayat transaksi spesifik berdasarkan ID Transaksi untuk mitigasi *human error*.
+* **Dynamic Room Manager**: pendaftaran, pembaruan data profil (*upsert*), dan penghapusan unit kamar kos secara langsung melalui antarmuka web.
+* **Bulk Payment Simulation**: mendukung pembayaran rapel (banyak bulan sekaligus). Sistem secara otomatis mengalkulasi pembagian nominal transaksi secara rata per bulan.
+* **Real-Time Dashboard Tracking**: pemisahan visual otomatis antara kamar yang berstatus "Lunas" dan kamar yang memiliki tunggakan ("DP/Nyicil") pada periode tertentu.
+* **Automated Financial Analytics**: visualisasi data pendapatan riil dari database ke dalam bentuk grafik batang (*Bar Chart*) interaktif.
+* **Data Portability (Export CSV)**: fitur unduh laporan data kelunasan hanya dengan satu klik untuk keperluan pembukuan lanjutan di Microsoft Excel.
+* **Undo Transaction**: mekanisme pembatalan atau penghapusan riwayat transaksi spesifik berdasarkan ID Transaksi untuk mitigasi *human error*.
 
 ---
 
@@ -31,7 +31,7 @@ TUBES_PBO/
 ```
 
 ## 🧠 Konsep OOP & Fitur Teknis yang Diterapkan
-Encapsulation (Enkapsulasi): Membungkus data variabel profil penghuni dan properti pembayaran ke dalam objek kelas KamarKos dan PembayaranKos.
+Encapsulation (Enkapsulasi): membungkus data variabel profil penghuni dan properti pembayaran ke dalam objek kelas KamarKos dan PembayaranKos.
 
 Modularity (Modularitas): Isolasi total antara fungsi antarmuka (main_app.py), otak pengontrol (manajer_kos.py), dan akses query database (database.py).
 
@@ -46,7 +46,7 @@ Buka terminal di text editor Anda (misal: VS Code) dan jalankan perintah:
 pip install streamlit pandas
 ```
 
-Menjalankan Server Aplikasi Pastikan direktori terminal berada di dalam folder proyek ini, lalu eksekusi:
+Menjalankan server aplikasi Pastikan direktori terminal berada di dalam folder proyek ini, lalu eksekusi:
 
 
 ```Bash
@@ -54,12 +54,12 @@ python -m streamlit run main_app.py
 ```
 (Catatan: Jika Windows mengarahkan ke Microsoft Store, gunakan perintah: ```py -m streamlit run main_app.py```)
 
-## Alur Alur Simulasi Awal (Wajib Diikuti)
+## Alur Simulasi Awal (Wajib Diikuti)
 
-1. Buka Menu Kelola Kamar & Penghuni terlebih dahulu.
+1. Buka menu Kelola Kamar & Penghuni terlebih dahulu.
 
 2. Daftarkan 1 atau 2 nomor kamar contoh (misal: Kamar 01).
 
-3. Pindah ke Menu Tambah Pembayaran untuk menyimulasikan transaksi keuangan bulanan.
+3. Pindah ke menu Tambah Pembayaran untuk menyimulasikan transaksi keuangan bulanan.
 
-4. Pantau hasilnya secara langsung di Menu Status Pembayaran.
+4. Pantau hasilnya secara langsung di menu Status Pembayaran.
